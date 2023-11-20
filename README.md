@@ -42,3 +42,5 @@ El cuadro presentado es una representación "oversimplified" del procesamiento d
 
 
 ![chair_108](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/f052564b-4b5c-4a76-bea0-c74ea4dcdfd7)
+
+La imagen presentada fue obtenida del algoritmos encontrado en [TF_GAN/data/gen_images.py](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/blob/master/TF_GAN/data/gen_images.py)
