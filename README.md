@@ -16,15 +16,15 @@ A lo largo de este informe, se detallarán los elementos esenciales de la GAN im
 
 El objetivo principal de este proyecto fue diseñar, implementar y evaluar una Generative Adversarial Network (GAN) capaz de transformar imágenes bidimensionales (2D) en representaciones tridimensionales (3D) de alta calidad y realismo.
 
-1.Desarrollar una arquitectura de GAN adecuada: Investigar y diseñar una estructura de red neural que pudiera manejar de manera eficiente la transformación de datos 2D a 3D, manteniendo la coherencia estructural y las características distintivas de los objetos.
+1. Desarrollar una arquitectura de GAN adecuada: Investigar y diseñar una estructura de red neural que pudiera manejar de manera eficiente la transformación de datos 2D a 3D, manteniendo la coherencia estructural y las características distintivas de los objetos.
 
-2.Recopilar y preprocesar datos de entrada: Recolectar y preparar un conjunto de datos diverso de imágenes 2D representativas de los objetos a transformar, asegurando su calidad y consistencia para el entrenamiento del modelo.
+2. Recopilar y preprocesar datos de entrada: Recolectar y preparar un conjunto de datos diverso de imágenes 2D representativas de los objetos a transformar, asegurando su calidad y consistencia para el entrenamiento del modelo.
 
-3.Implementar el proceso de entrenamiento: Desarrollar un entorno de entrenamiento para la GAN que optimice la generación de imágenes 3D realistas a partir de las imágenes 2D, ajustando parámetros y optimizando la red para mejorar la calidad de las salidas.
+3. Implementar el proceso de entrenamiento: Desarrollar un entorno de entrenamiento para la GAN que optimice la generación de imágenes 3D realistas a partir de las imágenes 2D, ajustando parámetros y optimizando la red para mejorar la calidad de las salidas.
 
-4.Evaluar la calidad de las imágenes generadas: Establecer métricas y procedimientos de evaluación para medir la calidad, la coherencia estructural y la precisión de las imágenes en 3D generadas por la red GAN en comparación con los datos reales.
+4. Evaluar la calidad de las imágenes generadas: Establecer métricas y procedimientos de evaluación para medir la calidad, la coherencia estructural y la precisión de las imágenes en 3D generadas por la red GAN en comparación con los datos reales.
 
-5.Analizar la utilidad y aplicabilidad: Examinar la idoneidad de las imágenes generadas en contextos específicos de aplicación, evaluando su utilidad para tareas prácticas o su potencial en aplicaciones industriales, científicas o de diseño.
+5. Analizar la utilidad y aplicabilidad: Examinar la idoneidad de las imágenes generadas en contextos específicos de aplicación, evaluando su utilidad para tareas prácticas o su potencial en aplicaciones industriales, científicas o de diseño.
 
 El cumplimiento de estos objetivos proporcionará una comprensión profunda del rendimiento y la capacidad de la GAN desarrollada para transformar imágenes 2D en representaciones realistas en 3D, así como su relevancia en diversos dominios de aplicación.
 
