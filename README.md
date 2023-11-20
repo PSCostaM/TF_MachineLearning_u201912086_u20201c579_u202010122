@@ -36,5 +36,6 @@ El cumplimiento de estos objetivos proporcionará una comprensión profunda del 
 
 A pesar de que la data conseguida provenga de un dataset de imágenes 3d de sillas en .off, la transformación de estos datos nos dá un data 2d en forma de .binvoxels. Gracias a la librería binvox es posible obtener imágenes de los objetos 3d en distintas posiciones.
 
-![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/ae2664c7-e455-4f3b-a1a0-1f32b0518113)
+![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/db28a1a1-9d5b-4188-9f96-9fbc194127ec)
+
 
