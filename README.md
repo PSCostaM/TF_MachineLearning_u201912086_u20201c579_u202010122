@@ -16,6 +16,8 @@ A lo largo de este informe, se detallarán los elementos esenciales de la GAN im
 
 El objetivo principal de este proyecto fue diseñar, implementar y evaluar una Generative Adversarial Network (GAN) capaz de transformar imágenes bidimensionales (2D) en representaciones tridimensionales (3D) de alta calidad y realismo.
 
+#### Objetivos específicos incluyeron:
+
 1. Desarrollar una arquitectura de GAN adecuada: Investigar y diseñar una estructura de red neural que pudiera manejar de manera eficiente la transformación de datos 2D a 3D, manteniendo la coherencia estructural y las características distintivas de los objetos.
 
 2. Recopilar y preprocesar datos de entrada: Recolectar y preparar un conjunto de datos diverso de imágenes 2D representativas de los objetos a transformar, asegurando su calidad y consistencia para el entrenamiento del modelo.
