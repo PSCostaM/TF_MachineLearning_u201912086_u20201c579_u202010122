@@ -56,3 +56,17 @@ Tras la importación de un .STL la visualización del modelo fue inmediata y ya 
 ![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/3a476d6c-6279-4ab8-8173-77c7bc740add)
 
 
+## Milestone 5: TA4
+## Methodology
+
+### Model Architecture
+
+El modelo a utilizar está compuesto por un generador, el cual se encarga de generar muestras de imágenes con la intención de ser indistinguibles a las reales. Por otra parte, el discriminador tomará como entrada tanto las muestras de imágenes generadas como las del dataset con imágenes reales para tratar de distinguir las muestras reales de las generadas.
+
+![Arquitectura-Diagrama](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/89089765/237fbd1b-bc75-4312-8dac-6becf678744e)
+
+### 3D Printing
+
+El proceso de impresión de nuestro modelo tomó alrededor de 17 minutos. Al ser un modelo de tamaño reducido y con grandes espacios en la zona inferior, requirió un soporte de similares proporciones a nuestro modelo.
+
+![impresora3d](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/89089765/c5d84e1f-fb71-4f36-9681-fc9a2d911af9)
