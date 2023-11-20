@@ -44,3 +44,12 @@ El cuadro presentado es una representación "oversimplified" del procesamiento d
 ![chair_108](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/f052564b-4b5c-4a76-bea0-c74ea4dcdfd7)
 
 La imagen presentada fue obtenida del algoritmos encontrado en [TF_GAN/data/gen_images.py](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/blob/master/TF_GAN/data/gen_images.py)
+
+### Printing Plan
+
+El software utilizado para la presentación de un archivo STL, generación del modelo con sus respectivos soportes y configuración de impresión 3D es prusa-slicer.
+![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/ad2adde4-f9b0-4b82-892d-edcd72b3cd7f)
+Tras la importación de un .STL la visualización del modelo fue inmediata y ya tenía los soportes generados. Después de esto tuvimos que configurar el material, especificar las cualidades de la impresora a usar para obtener los gramos totales y el tiempo aproximado de impresión. Después de este proceso de configuración, se generaba un archivo .gcode el cuál iba a ser transferido a un usb para ser conectado a la impresora y empezar con el proceso de impresión.
+![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/3a476d6c-6279-4ab8-8173-77c7bc740add)
+
+
