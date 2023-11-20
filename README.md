@@ -38,7 +38,7 @@ A pesar de que la data conseguida provenga de un dataset de imágenes 3d de sill
 
 ![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/db28a1a1-9d5b-4188-9f96-9fbc194127ec)
 
-El cuadro presentado es una representación "oversimplified" del procesamiento de datos para tener data de entrenamiento para el modelo GAN. La transformación de la .binvoxels a imágenes nos sirve para visualizar la data escrita en los archivos generados y revisar cómo es que la librería binvox transforma los archivos .off.
+El cuadro presentado es una representación "oversimplified" del procesamiento de datos para tener data de entrenamiento para el modelo GAN. La transformación de .binvoxels a imágenes nos sirve para visualizar la data escrita en los archivos generados y revisar cómo es que la librería binvox transforma los archivos .off.
 
 
 ![chair_108](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/f052564b-4b5c-4a76-bea0-c74ea4dcdfd7)
