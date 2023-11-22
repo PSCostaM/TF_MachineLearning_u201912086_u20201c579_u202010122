@@ -67,7 +67,7 @@ El modelo a utilizar está compuesto por un generador, el cual se encarga de gen
 
 ![Arquitectura-Diagrama](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/89089765/237fbd1b-bc75-4312-8dac-6becf678744e)
 
-##Training Setup
+## Training Setup
 
 Todo método de entrenamiento y generación de modelo fue hecha en una laptop personal. Las specs de esta fueron
 - Procesador: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz   2.59 GHz
@@ -142,3 +142,15 @@ El proceso de impresión de nuestro modelo tomó alrededor de 17 minutos. Al ser
 ![impresora3d](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/89089765/c5d84e1f-fb71-4f36-9681-fc9a2d911af9)
 
 ## Final Milestone: TF
+
+### Results
+
+Tras 8 horas de entrenamiento los pesos generados serán utilizados para la generación de archivos .binvoxels los cuales después son utilizados en una función para convertirlos en .STL y luego mostrarlos en cualquier software de visualización. 
+
+### Conclusiones
+
+- Generación Inicial con Potencial Mejorable: Durante el entrenamiento de 8 horas, se logró generar un modelo 3D a partir de imágenes 2D, representando un cubo con ruido o imperfecciones. A pesar de estas limitaciones iniciales, se evidencia el potencial de la Generative Adversarial Network (GAN) para crear representaciones tridimensionales, sugiriendo oportunidades de mejora y refinamiento con entrenamiento adicional o ajustes en la arquitectura del modelo.
+
+- Desafíos en la Transformación de Datos: La transformación de datos desde archivos .binvoxels a imágenes 2D para su procesamiento presentó desafíos significativos. A pesar de ello, la visualización y manipulación de estos datos en diferentes posiciones permitió comprender cómo se representaban los objetos en 3D a través de imágenes 2D, siendo fundamental para el entrenamiento del modelo.
+
+- Aplicaciones Prácticas en la Impresión 3D: La capacidad de generar modelos 3D a partir de imágenes 2D proporciona una herramienta valiosa para la impresión 3D. La representación fiel de objetos tridimensionales desde imágenes puede tener aplicaciones en diseño, prototipado rápido y fabricación, permitiendo la generación de modelos que son directamente utilizables en entornos de impresión 3D.
