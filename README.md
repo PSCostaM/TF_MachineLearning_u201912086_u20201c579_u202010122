@@ -63,8 +63,77 @@ Tras la importación de un .STL la visualización del modelo fue inmediata y ya 
 
 El modelo a utilizar está compuesto por un generador, el cual se encarga de generar muestras de imágenes con la intención de ser indistinguibles a las reales. Por otra parte, el discriminador tomará como entrada tanto las muestras de imágenes generadas como las del dataset con imágenes reales para tratar de distinguir las muestras reales de las generadas.
 
+
+
 ![Arquitectura-Diagrama](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/89089765/237fbd1b-bc75-4312-8dac-6becf678744e)
 
+##Training Setup
+
+Todo método de entrenamiento y generación de modelo fue hecha en una laptop personal. Las specs de esta fueron
+- Procesador: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz   2.59 GHz
+- Ram Instalada: 32.0 GB (16gb 2933Mhz * 2) 
+- GPU: NVIDIA GeForce GTX 1650 4Gb
+
+```
+# Import necessary libraries and modules
+
+# Define a parser to handle command-line arguments
+args = parse_command_line_arguments()
+
+# Set device to GPU if available, else use CPU
+device = determine_device()
+
+# Load dataset
+dataset = load_dataset(args.dataset)
+
+# Create a dataloader
+dataloader = create_dataloader(dataset, args.batch_size, shuffle=True, num_workers=args.workers)
+
+# Function to initialize the neural renderer
+def renderer_init(m):
+    # Initialize weights of Conv layers using Xavier normal initialization
+
+# Create a neural renderer model and move it to the specified device
+renderer = create_neural_renderer_model(args).move_to(device)
+
+# Load pre-trained weights if available, otherwise initialize weights
+load_or_initialize_weights(renderer, 'weights/nr.pt')
+
+# Define loss functions
+criterion = BinaryCrossEntropyLoss()
+l2 = MeanSquaredErrorLoss(reduction='sum')
+
+# Define optimizer for the neural renderer
+optimizerR = AdamOptimizer(renderer.parameters(), lr=args.nr_lr, betas=(args.beta1, 0.999))
+
+# Initialize an empty list to store images
+img_list = []
+
+# Main training loop
+for epoch in range(args.num_epochs):
+    for i, data in enumerate(dataloader):
+        # Update the neural renderer network
+        renderer.zero_gradients()
+        voxels = get_voxels_from_data(data).move_to(device)
+        nr = renderer.render(voxels)
+        ots = render_with_off_the_shelf_renderer(voxels, device)
+        errR = calculate_l2_loss(nr, ots)
+        calculate_gradients(errR)
+        update_neural_renderer(optimizerR)
+        
+        # Output training statistics
+        if i % 50 == 0:
+            print_training_stats(epoch, args.num_epochs, i, len(dataloader), errR)
+        if i % 200 == 0:
+            add_image_to_list(nr.detach().cpu()[0, 0].numpy() * 255)
+
+# Save trained neural renderer weights
+save_trained_weights(renderer, 'weights/nr.pt')
+
+# Display animated images using matplotlib
+display_images_animation(img_list)
+
+```
 ### 3D Printing
 
 El proceso de impresión de nuestro modelo tomó alrededor de 17 minutos. Al ser un modelo de tamaño reducido y con grandes espacios en la zona inferior, requirió un soporte de similares proporciones a nuestro modelo.
