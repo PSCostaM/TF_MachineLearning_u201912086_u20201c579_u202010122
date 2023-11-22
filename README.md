@@ -74,6 +74,7 @@ Todo método de entrenamiento y generación de modelo fue hecha en una laptop pe
 - Ram Instalada: 32.0 GB (16gb 2933Mhz * 2) 
 - GPU: NVIDIA GeForce GTX 1650 4Gb
 
+Pseudocode algoritmo de entrenamiento 
 ```
 # Import necessary libraries and modules
 
@@ -132,10 +133,12 @@ save_trained_weights(renderer, 'weights/nr.pt')
 
 # Display animated images using matplotlib
 display_images_animation(img_list)
-
 ```
+
 ### 3D Printing
 
 El proceso de impresión de nuestro modelo tomó alrededor de 17 minutos. Al ser un modelo de tamaño reducido y con grandes espacios en la zona inferior, requirió un soporte de similares proporciones a nuestro modelo.
 
 ![impresora3d](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/89089765/c5d84e1f-fb71-4f36-9681-fc9a2d911af9)
+
+## Final Milestone: TF
