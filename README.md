@@ -147,6 +147,10 @@ El proceso de impresión de nuestro modelo tomó alrededor de 17 minutos. Al ser
 
 Tras 8 horas de entrenamiento los pesos generados serán utilizados para la generación de archivos .binvoxels los cuales después son utilizados en una función para convertirlos en .STL y luego mostrarlos en cualquier software de visualización. 
 
+![image](https://github.com/PSCostaM/TF_MachineLearning_u201912086_u20201c579_u202010122/assets/48858434/089673f7-7e38-4e7a-add0-dbcf1bcd973f)
+
+
+
 ### Conclusiones
 
 - Generación Inicial con Potencial Mejorable: Durante el entrenamiento de 8 horas, se logró generar un modelo 3D a partir de imágenes 2D, representando un cubo con ruido o imperfecciones. A pesar de estas limitaciones iniciales, se evidencia el potencial de la Generative Adversarial Network (GAN) para crear representaciones tridimensionales, sugiriendo oportunidades de mejora y refinamiento con entrenamiento adicional o ajustes en la arquitectura del modelo.
